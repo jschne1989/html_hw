@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bootstrap Visualization Dashboard</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+
+    <!-- My CSS stylesheet -->
+    <link rel="stylesheet" href="Resources/assets/style.css" media="screen">
+
+  </head>
+
+  <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light navbar-color">
+    <a class="navbar-brand nav-white" href="index.html">Lattitude Data</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item nav-white" href="humidity.html">Humidity</a>
+            <a class="dropdown-item nav-white" href="cloud.html">Cloudiness</a>
+            <a class="dropdown-item nav-white" href="temp.html">Temperature</a>
+            <a class="dropdown-item nav-white" href="wind.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-white" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-white" href="data.html">Data</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+<div class = "container">
+    <article class="description-content">
+        <div class = "col-xs-12">
+          <h1 class="description-header">Comparison: Latitude vs. Variables</h1>
+          <hr class="description-hr"/>
+          <p> Click on any image for additional information </p>
+        </div>
+        <div class = "row">
+          <div class="col-md-6 float">
+            <h2> vs. Max Temperature</h2>
+            <a href="temp.html"><img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="comparison-image img-fluid"></a>
+            <hr class="visible-xs visible-sm">
+          </div>
+      
+          <div class="col-md-6 float">
+            <h2> vs. Humidity</h2>
+            <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity" class="comparison-image img-fluid"></a>
+            <hr class="visible-xs visible-sm">
+          </div>
+        </div>
+        <div class = "row">
+        <div class="col-md-6 float">
+          <h2> vs. Cloudiness</h2>
+          <a href="cloud.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="comparison-image img-fluid"></a>
+          <hr class="visible-xs visible-sm">
+        </div>
+
+        <div class="col-md-6 float">
+          <h2> vs. Wind Speed</h2>
+          <a href="wind.html"><img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind SPeed" class="comparison-image img-fluid"></a>
+          <hr class="visible-xs visible-sm">
+        </div>
+      </div>
+
+    </article>
+</div>
+
+</body>
